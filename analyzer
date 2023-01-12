@@ -113,13 +113,67 @@ def average_job_data(data):
         avg_jobs.append(avg_job_stats)
     return avg_jobs
 
+def distribution(category,year):
+    df = pd.read_csv('data.csv')
+    df2 = pd.read_csv(f'{year} data.csv')
+    plt.figure(figsize = (8,4))
+    sns.distplot(df[f'{category}'], color = 'forestgreen',label = 'Average (2015-2021)',kde=True)
+    sns.distplot(df2[f'{category}'], color = 'skyblue',label = '2016',kde=True)
+    plt.title(f'Distribution of {category.capitalize()}', fontsize = 15, pad = 12, color = 'r')
+    plt.xlabel(f'{category.capitalize()}', fontsize = 12)
+    plt.ylabel('Density', fontsize = 12)
+    plt.legend() 
+    plt.show()
+
+    fig, axs = plt.subplots(2, 2, figsize=(7, 7))
+
+    sns.histplot(data=df2['salary'], x=df2["salary"], kde=True, color="maroon", ax=axs[0, 0])
+    sns.histplot(data=df2['satisfaction'], x=df2["satisfaction"], kde=True, color="green", ax=axs[0, 1])
+    sns.histplot(data=df2['job_openings'], x=df2["job_openings"], kde=True, color="blue", ax=axs[1, 0])
+    sns.histplot(data=df2['rank'], x=df2["rank"], kde=True, color="gold", ax=axs[1, 1])
+
+    plt.show()
+
+def correlation():
+    #visualize correlation of each variable using pearson correlation
+    df = pd.read_csv('data.csv')
+    df.shape
+    df.head()
+    df.describe()
+    df.info()
+    df['year'] = pd.to_datetime(df['year'], format = '%Y')
+    df.corr()
+    sns.heatmap(df.corr(), annot = True, cmap = 'viridis')
+    plt.title('Pearson Correlation', fontsize = 15, pad = 12, color = 'b')
+    plt.show()
+    print('Maximum of salary : ', df['salary'].max())
+    print('Minimum of salary : ', df['salary'].min())
+    print('Median of salary : ', df['salary'].median())
+    print('Average of salary : ', df['salary'].mean())
+    print('Total of salary : ', df['salary'].sum())
+    print('Maximum of satisfaction : ', df['satisfaction'].max())
+    print('Minimum of satisfaction : ', df['satisfaction'].min())
+    print('Median of satisfaction : ', df['satisfaction'].median())
+    print('Average of satisfaction : ', df['satisfaction'].mean())
+    print('Total of satisfaction : ', df['satisfaction'].sum())
+    #analyze job salary and job satisfaction based on rank
+    job_rank = pd.pivot_table(df, index = ['rank', 'job'], values = ['satisfaction', 'salary'],
+                            aggfunc = {'satisfaction' : np.mean, 'salary' : np.sum}).sort_values('rank', ascending = True)
+    job_rank.head(50)
+
+
 
 def main():
     data = read_data('data.csv')
-    highest_paying_job(2015)
-    highest_satisfaction_job(2018)
-    highest_demand_job(2020)
+    year = input("What year would you like to analyze? (2015-2021) ")
+    highest_paying_job(year)
+    highest_satisfaction_job(year)
+    highest_demand_job(year)
+    category = input("What category would you like to see the distribution of? ")
+    distribution(category,year)
+    correlation()
     
 
 
 main()
+
