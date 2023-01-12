@@ -1,0 +1,51 @@
+year,job,salary,satisfaction,job_openings,rank
+2018,Data Scientist,110000,4.2,4524,1
+2018,DevOps Engineer,105000,4.0,3369,2
+2018,Marketing Manager,85000,4.0,6439,3
+2018,Occupational Therapist,74000,4.0,11903,4
+2018,HR Manager,85000,3.9,4458,5
+2018,Electrical Engineer,76000,3.9,5839,6
+2018,Strategy Manager,135000,4.2,1195,7
+2018,Mobile Developer,90000,4.1,1809,8
+2018,Product Manager,113000,3.7,7531,9
+2018,Manufacturing Engineer,72000,4.0,4241,10
+2018,Compliance Manager,96000,4.3,1222,11
+2018,Finance Manager,116000,3.8,2998,12
+2018,Risk Manager,97000,4.2,1209,13
+2018,Business Development Manager,75000,3.9,4060,14
+2018,Front End Engineer,100000,4.2,1122,15
+2018,Site Reliability Engineer,120000,4.1,1064,16
+2018,Mechanical Engineer,75000,3.8,5079,17
+2018,Analytics Manager,115000,3.9,1381,18
+2018,Tax Manager,110000,3.7,3309,19
+2018,Creative Manager,110000,4.3,824,20
+2018,Software Engineer,102500,3.6,29187,21
+2018,Hardware Engineer,115000,4.2,806,22
+2018,Corporate Recruiter,65000,4.3,2330,23
+2018,QA Manager,92000,3.8,1741,24
+2018,Physician Assistant,104000,3.6,5517,25
+2018,Database Administrator,94000,3.8,2370,26
+2018,UX Designer,90000,3.8,1963,27
+2018,Nursing Manager,84660,3.7,4209,28
+2018,Engagement Manager,115000,3.7,2169,29
+2018,Solutions Architect,125000,3.6,3325,30
+2018,Process Engineer,78000,3.8,3033,31
+2018,Reliability Engineer,92000,4.3,747,32
+2018,Data Engineer,100000,3.7,2816,33
+2018,Operations Manager,65000,3.8,13706,34
+2018,Speech Language Pathologist,72000,3.7,11573,35
+2018,Communications Manager,80000,3.9,1380,36
+2018,Audit Manager,100000,3.7,1951,37
+2018,Data Analyst,60000,3.9,4729,38
+2018,Systems Analyst,75000,3.7,2710,39
+2018,Facilities Manager,75000,3.8,2139,40
+2018,Strategic Account Manager,85000,4.1,808,41
+2018,Business Intelligence Developer,86000,3.9,882,42
+2018,Business Analyst,71000,3.6,9603,43
+2018,Accounting Manager,82000,3.6,3273,44
+2018,UI Developer,95000,3.8,1004,45
+2018,Executive Assistant,55000,3.9,4684,46
+2018,Management Consultant,110000,3.8,1024,47
+2018,Project Manager,80000,3.5,23274,48
+2018,Nurse Practitioner,100000,3.5,8510,49
+2018,HR Generalist,57120,3.9,2705,50

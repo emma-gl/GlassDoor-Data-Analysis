@@ -1,0 +1,51 @@
+year,job,salary,satisfaction,job_openings,rank
+2021,Java Developer,90830,4.2,10103,1
+2021,Data Scientist,113736,4.1,5971,2
+2021,Product Manager,121107,3.9,14515,3
+2021,Enterprise Architect,131361,4.0,10069,4
+2021,Devops Engineer,110003,4.0,6904,5
+2021,Information Security Engineer,110000,4.0,5621,6
+2021,Business Development Manager,82182,4.1,8827,7
+2021,Mobile Engineer,94301,4.1,4631,8
+2021,Software Engineer,110245,3.8,40564,9
+2021,Dentist,134122,4.0,4315,10
+2021,Front End Engineer,81360,4.0,6978,11
+2021,HR Manager,87852,4.2,3818,12
+2021,Strategy Manager,123207,4.2,2647,13
+2021,Salesforce Developer,89098,4.2,3346,14
+2021,Automation Engineer,86445,4.1,4123,15
+2021,Back End Engineer,90757,4.3,3001,16
+2021,Machine Learning Engineer,104837,4.1,2977,17
+2021,Product Marketing Manager,120267,4.1,2998,18
+2021,Tax Manager,111046,4.0,4052,19
+2021,Program Manager,80066,3.9,18963,20
+2021,Consultant,83069,3.9,9841,21
+2021,Solutions Engineer,90942,4.2,2654,22
+2021,Cloud Engineer,105565,3.9,5482,23
+2021,UX Designer,90881,4.0,4122,24
+2021,Product Designer,104120,4.1,2420,25
+2021,Sales Manager,72560,3.9,16458,26
+2021,Clinical Nurse,74031,4.0,7702,27
+2021,Clinic Manager,74562,4.0,5132,28
+2021,Business Analyst,76201,3.9,13677,29
+2021,Technical Program Manager,142379,4.0,2618,30
+2021,Marketing Manager,68042,3.9,12811,31
+2021,Project Manager,80562,3.8,34362,32
+2021,Construction Superintendent,80738,3.9,6438,33
+2021,QA Engineer,85000,4.0,2654,34
+2021,Data Analyst,70000,3.9,7748,35
+2021,Realtor,52022,4.4,8148,36
+2021,Electrical Engineer,80033,3.9,6255,37
+2021,Attorney,86071,3.9,3954,38
+2021,Operations Manager,70000,3.8,23181,39
+2021,Scrum Master,105000,4.0,2331,40
+2021,Physician Assistant,107238,3.8,5601,41
+2021,Technical Project Manager,103633,3.9,3043,42
+2021,Tax Accountant,67028,3.9,8829,43
+2021,Risk Manager,94488,3.9,3688,44
+2021,Finance Manager,110091,3.7,6623,45
+2021,Corporate Recruiter,70959,4.4,2390,46
+2021,Customer Success Manager,66041,4.1,4046,47
+2021,Civil Engineer,65612,4.0,4705,48
+2021,Financial Analyst,70959,3.9,6705,49
+2021,Mechanical Engineer,75785,3.9,5277,50

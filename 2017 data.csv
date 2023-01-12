@@ -1,0 +1,51 @@
+year,job,salary,satisfaction,job_openings,rank
+2017,Data Scientist,110000,4.4,4184,1
+2017,DevOps Engineer,110000,4.2,2725,2
+2017,Data Engineer,106000,4.3,2599,3
+2017,Tax Manager,110000,4.0,3317,4
+2017,Analytics Manager,112000,4.1,1958,5
+2017,HR Manager,85000,3.8,4339,6
+2017,Database Administrator,93000,3.8,2877,7
+2017,Strategy Manager,130000,4.3,1184,8
+2017,UX Designer,92500,4.0,1691,9
+2017,Solutions Architect,125000,3.7,2232,10
+2017,Marketing Manager,90000,3.7,3875,11
+2017,Occupational Therapist,72000,3.7,14897,12
+2017,Audit Manager,98000,3.8,1887,13
+2017,Electrical Engineer,78000,3.7,3643,14
+2017,Nurse Practitioner,100000,3.5,15634,15
+2017,Software Engineer,101000,3.5,17085,16
+2017,Corporate Recruiter,60000,4.2,2858,17
+2017,Supply Chain Manager,100000,3.9,1270,18
+2017,Finance Manager,116000,3.6,3142,19
+2017,Mechanical Engineer,76000,3.7,3383,20
+2017,Communications Manager,82000,4.0,1332,21
+2017,QA Manager,92000,3.7,2531,22
+2017,Controls Engineer,75400,3.9,1756,23
+2017,Nurse Manager,77000,3.6,6710,24
+2017,Compliance Manager,100000,3.9,1104,25
+2017,Mobile Developer,85000,3.7,2130,26
+2017,Systems Administrator,68000,3.7,4046,27
+2017,Executive Assistant,56000,3.8,3946,28
+2017,Technical Account Manager,66000,3.9,1968,29
+2017,Hardware Engineer,108000,3.9,954,30
+2017,Intelligence Analyst,62400,4.2,1605,31
+2017,Product Manager,107000,3.4,5536,32
+2017,Professor,70000,3.8,1955,33
+2017,Physician,200000,3.5,2610,34
+2017,Compensation Analyst,70000,4.1,1219,35
+2017,Civil Engineer,65200,3.8,2004,36
+2017,Research Engineer,92850,3.8,1006,37
+2017,Accounting Manager,82000,3.5,3392,38
+2017,Information Security Engineer,100000,3.7,1247,39
+2017,Manufacturing Engineer,70000,3.7,2504,40
+2017,Security Analyst,70000,3.7,2464,41
+2017,Business Operations Manager,93000,3.8,1009,42
+2017,UI Designer,80000,4.0,950,43
+2017,Pharmacy Manager,130000,3.5,2652,44
+2017,Supplier Quality Engineer,80150,4.0,862,45
+2017,National Sales Manager,90000,3.8,937,46
+2017,Business Intelligence Developer,83000,3.9,837,47
+2017,Dental Hygienist,66000,4.1,1050,48
+2017,Physical Therapist,70000,3.5,24579,49
+2017,Construction Project Manager,85000,3.6,1944,50

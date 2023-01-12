@@ -1,0 +1,51 @@
+year,job,salary,satisfaction,job_openings,rank
+2019,Data Scientist,108000,4.3,6510,1
+2019,Nursing Manager,83000,4.0,13931,2
+2019,Marketing Manager,82000,4.2,7395,3
+2019,Occupational Therapist,74000,4.0,17701,4
+2019,Product Manager,115000,3.8,11884,5
+2019,Devops Engineer,106000,4.1,4657,6
+2019,Program Manager,87000,3.9,14753,7
+2019,Data Engineer,100000,3.9,4739,8
+2019,HR Manager,85000,4.2,3908,9
+2019,Software Engineer,104000,3.6,49007,10
+2019,Mechanical Engineer,75000,3.9,5949,11
+2019,Physician Assistant,105000,3.7,9819,12
+2019,Sales Manager,65000,3.8,21695,13
+2019,Sales Engineer,90000,4.1,3145,14
+2019,Operations Manager,68000,3.8,18311,15
+2019,Strategy Manager,140000,4.0,2783,16
+2019,Security Engineer,102000,3.8,4683,17
+2019,Construction Manager,75000,4.3,3334,18
+2019,Speech Language Pathologist,72000,3.7,29467,19
+2019,Project Manager,75000,3.6,30107,20
+2019,Product Designer,100000,4.5,2158,21
+2019,Java Developer,85000,3.7,6636,22
+2019,Executive Assistant,60000,4.1,4858,23
+2019,Electrical Engineer,77000,3.7,7191,24
+2019,Finance Manager,118000,3.8,3747,25
+2019,Business Analyst,72000,3.7,13340,26
+2019,Solutions Architect,127900,3.6,6969,27
+2019,Recruiter,48000,4.1,9782,28
+2019,Business Development Manager,80000,3.7,6348,29
+2019,Dental Hygienist,67250,4.5,2805,30
+2019,Data Analyst,60000,3.9,5456,31
+2019,Nurse Practitioner,102000,3.5,18997,32
+2019,Applications Engineer,77000,4.0,2591,33
+2019,QA Manager,91250,4.1,1923,34
+2019,Risk Manager,100500,3.7,3924,35
+2019,Communications Manager,80000,4.2,2009,36
+2019,Physical Therapist,70000,3.6,34899,37
+2019,Facilities Manager,65000,4.0,3472,38
+2019,Systems Engineer,90000,3.5,16793,39
+2019,Customer Success Manager,65000,4.2,2601,40
+2019,Radiologic Technologist,48000,4.0,6115,41
+2019,Restaurant Manager,49000,3.8,21754,42
+2019,Software Engineering Manager,153000,4.0,1445,43
+2019,Software Developer,80000,3.5,11833,44
+2019,Safety Manager,71000,4.1,2180,45
+2019,UX Designer,89000,3.7,3333,46
+2019,Office Manager,42000,3.9,18681,47
+2019,Brand Manager,85000,4.3,1500,48
+2019,Software Development Manager,140000,4.2,1178,49
+2019,Systems Administrator,68000,3.6,8278,50
