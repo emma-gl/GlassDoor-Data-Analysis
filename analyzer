@@ -7,6 +7,9 @@ import logging
 
 
 def read_data(filename):
+    '''
+    Open dataset and append each line of file into list
+    '''
     data = []
     with open(filename) as file:
         next(file)
@@ -16,7 +19,10 @@ def read_data(filename):
     return data
 
 def highest_paying_job(year):
-    #print(data)
+    '''
+    Parse through all the salaries for a given year and determine
+    the job with the highest salary
+    '''
     data = read_data(f"{year} data.csv")
     df = pd.read_csv(f'{year} data.csv')
     top_50job = df['job']
@@ -25,15 +31,18 @@ def highest_paying_job(year):
     listed_jobs =[]
     avg_job_data = average_job_data(data)
     count = 0
+    #loop through each job in list of data
     for job in data:
         #print(job)
         if job[1] not in listed_jobs:
             listed_jobs.append(job[1])
+            #check if current salary is higher than previously-found highest salary
             if int(job[2]) > max:
                 max_job_info = job
                 max = int(job[2])
     logging.info(f"The highest paying job in the {year} was: {max_job_info[1]} with a average salary of ${max_job_info[2]}.")
     print(f"The highest paying job in the {year} was: {max_job_info[1]} with a average salary of ${max_job_info[2]}.")
+    #create bar graph
     plt.figure(figsize = (13,10))
     df.groupby(top_50job)['salary'].sum().sort_values(ascending = True).plot(kind = 'barh', color = 'maroon')
     plt.title(f'Top Jobs of {year} Ranked by Salary', fontsize = 15, pad = 12, color = 'r')
@@ -42,7 +51,10 @@ def highest_paying_job(year):
     plt.show()
 
 def highest_satisfaction_job(year):
-    #print(data)
+    '''
+    Parse through all the satisfaction ratings for a given year and determine
+    the job with the highest satisfaction
+    '''
     data = read_data(f"{year} data.csv")
     df = pd.read_csv(f'{year} data.csv')
     top_50job = df['job']
@@ -52,7 +64,7 @@ def highest_satisfaction_job(year):
     avg_job_data = average_job_data(data)
     count = 0
     for job in data:
-        #print(job)
+        #check if current satisfaction rating is higher than previously-found max satisfaction rating
         if job[1] not in listed_jobs:
             listed_jobs.append(job[1])
             if float(job[3]) > max:
@@ -60,6 +72,7 @@ def highest_satisfaction_job(year):
                 max = float(job[3])
     logging.info(f"The most satisfactory job in the year {year} was: {max_job_info[1]} with a satisfactory rating of {max_job_info[3]}.")
     print(f"The most satisfactory job in the year {year} was: {max_job_info[1]} with a satisfactory rating of {max_job_info[3]}.")
+    #create bar graph
     plt.figure(figsize = (13,10))
     df.groupby(top_50job)['satisfaction'].sum().sort_values(ascending = True).plot(kind = 'barh', color = 'green')
     plt.title(f'Top Jobs of {year} Ranked by Total Satisfaction', fontsize = 15, pad = 12, color = 'r')
@@ -68,7 +81,10 @@ def highest_satisfaction_job(year):
     plt.show()
 
 def highest_demand_job(year):
-    #print(data)
+    '''
+    Parse through all the job openings for a given year and determine
+    the job with the highest number of job openings
+    '''
     data = read_data(f"{year} data.csv")
     df = pd.read_csv(f'{year} data.csv')
     top_50job = df['job']
@@ -78,7 +94,7 @@ def highest_demand_job(year):
     avg_job_data = average_job_data(data)
     count = 0
     for job in data:
-        #print(job)
+        #check if current # of job openings is higher than the previously found max number of job openings
         if job[1] not in listed_jobs:
             listed_jobs.append(job[1])
             if int(job[4]) > max:
@@ -86,6 +102,7 @@ def highest_demand_job(year):
                 max = int(job[4])
     logging.info(f"The job in highest demand in {year} was: {max_job_info[1]} with a total of {max_job_info[4]} openings.")
     print(f"The job in highest demand in {year} was: {max_job_info[1]} with a total of {max_job_info[4]} openings.")
+    #create bar graph
     plt.figure(figsize = (13,10))
     df.groupby(top_50job)['job_openings'].sum().sort_values(ascending = True).plot(kind = 'barh', color = 'blue')
     plt.title(f'Highest-demand Jobs of {year} Based on Amount of Job Openings', fontsize = 15, pad = 12, color = 'r')
@@ -94,16 +111,22 @@ def highest_demand_job(year):
     plt.show()
 
 def average_job_data(data):
+    '''
+    return list containing the average of each job's data
+    '''
     jobs = dict()
     for entry in data:
+        #check if current job is not already in dictionary
         if entry[1] not in jobs:
             jobs[entry[1]] = []
+        #add data to dictionary
         jobs[entry[1]].append(entry)
     avg_jobs = []
     for job in jobs:
         #print(f"{jobs[job][0][1]}: {len(jobs[job])}")
         entries_for_job = len(jobs[job])
         avg_salary,avg_satisfaction,avg_job_openings,avg_rank = 0,0,0,0
+        #average each value for each job and add averages to list
         for i in range(entries_for_job):
             avg_salary += float(jobs[job][i][2])
             avg_satisfaction += float(jobs[job][i][3])
@@ -118,6 +141,9 @@ def average_job_data(data):
     return avg_jobs
 
 def distribution(category,year):
+    '''
+    create/display distribution graphs for given category (layered with average)
+    '''
     df = pd.read_csv('data.csv')
     df2 = pd.read_csv(f'{year} data.csv')
     plt.figure(figsize = (8,4))
@@ -130,7 +156,9 @@ def distribution(category,year):
     plt.show()
 
     fig, axs = plt.subplots(2, 2, figsize=(7, 7))
-
+    '''
+    display histograms of each category for given year
+    '''
     sns.histplot(data=df2['salary'], x=df2["salary"], kde=True, color="maroon", ax=axs[0, 0])
     sns.histplot(data=df2['satisfaction'], x=df2["satisfaction"], kde=True, color="green", ax=axs[0, 1])
     sns.histplot(data=df2['job_openings'], x=df2["job_openings"], kde=True, color="blue", ax=axs[1, 0])
@@ -139,7 +167,9 @@ def distribution(category,year):
     plt.show()
 
 def correlation():
-    #visualize correlation of each variable using pearson correlation
+    '''
+    visualize correlation of each category using pearson correlation
+    '''
     df = pd.read_csv('data.csv')
     df.shape
     df.head()
@@ -181,6 +211,6 @@ def main():
     correlation()
     
 
-
-main()
+if __name__ == "__main__":
+    main()
 
