@@ -6,9 +6,9 @@ I obtained this dataset from [Kaggle](https://www.kaggle.com/datasets).
 
 My purpose for writing this software that does an analysis of each year's top ranking jobs in order to provide insights on what fields are growing based on various factors like salary, voted satisfaction, and competitiveness (job openings)- which may potentially help students choose a career path considering the analytics. 
 
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the data set, the questions and answers, the code running and a walkthrough of the code.}
+Below is a demonstration of my program performing its analysis of the dataset:
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://www.loom.com/share/0997cb61c3104679b05de6150d55b440)
 
 # Data Analysis Results
 
